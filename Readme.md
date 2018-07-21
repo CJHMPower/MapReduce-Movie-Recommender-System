@@ -20,9 +20,9 @@ The Item Collaborative Filtering Algorithms can be divided into two main steps
 
 The most commonly used metric for items is Cosine Similarity
 
-<img src="http://latex.codecogs.com/gif.latex?W_{ij} = \frac{|N(i)| \bigcap |N(j)|}{\sqrt{|N(i)||N(j)|}}" />
+<img src="http://latex.codecogs.com/gif.latex?W_{ij}=\frac{|N(i)|%20\bigcap%20|N(j)|}{\sqrt{|N(i)||N(j)|}}" />
 
-in which $ |N(i)| $ is the number of users interested in item ```i```, $ |N(j)| $ is the number of users interested in item ```j```. $|N(i)| \bigcap |N(j)|$ is the number of user interested in both item ```i``` and ```j```
+in which $ |N(i)| $ is the number of users interested in item ```i```, $ |N(j)| $ is the number of sers interested in item ```j```. $|N(i)| \bigcap |N(j)|$ is the number of user interested in both item ```i``` and ```j```
 
 ### 2. Compute prediction ratings for users' rating history
 
