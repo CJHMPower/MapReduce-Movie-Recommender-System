@@ -28,7 +28,7 @@ in which <img src="http://latex.codecogs.com/gif.latex?|N(i)|" /> is the number 
 
 After acquiring the similarities between each pair of movies, we can make predictions by users' rating history. The rating of user ```u``` to item ```j``` is calculated as below
 
-<center><img src="http://latex.codecogs.com/gif.latex?P_{uj}=\frac{\sum_{i\in N(u)}w_{ji}r_{ui}}{\sum_{i\in N(u)}w_{ji}}" /></center>
+<center><img src="http://latex.codecogs.com/gif.latex?P_{uj}=\frac{\sum_{i%20\in N(u)}w_{ji}%20r_{ui}}{\sum_{i\in N(u)}w_{ji}}" /></center>
 
 in which <img src="http://latex.codecogs.com/gif.latex?|N(u)|" /> is the set of items rated by user ```u```. <img src="http://latex.codecogs.com/gif.latex?W_{ji}" />  is the similarity between item ```i``` and ```j```, <img src="http://latex.codecogs.com/gif.latex?r_{ui}" />  is the previous rating of item ```i``` from user ```u```
 
@@ -43,7 +43,7 @@ There are total 8 MapReduce jobs used for implementing this algorithm in Hadoop 
 
 * ```coOccurrenceMatrix.java```: Build co-occurence matrix for each movies.
 
-* ```Normalize.java``` and ```Normalize2.java```: These two mapreduce jobs were used to normalize the similarities. In each of them, the co-occurence matrix was divided by  <img src="http://latex.codecogs.com/gif.latex?\sqrt{|N(i)|}$ and $ \sqrt{|N(j)|}" /> respectively.
+* ```Normalize.java``` and ```Normalize2.java```: These two mapreduce jobs were used to normalize the similarities. In each of them, the co-occurence matrix was divided by  <img src="http://latex.codecogs.com/gif.latex?\sqrt{|N(i)|}\sqrt{|N(j)|}" /> respectively.
 
 * ```Multiplication.java```: Use mapreduce matrix multiplication to multiply co-occurrce matrix and rating matrix.
 
