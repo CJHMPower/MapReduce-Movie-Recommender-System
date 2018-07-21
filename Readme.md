@@ -26,14 +26,14 @@ in which <img src="http://latex.codecogs.com/gif.latex?|N(i)|" /> is the number 
 
 ### 2. Compute prediction ratings for users' rating history
 
-After acquiring the similarities between each pair of movies, we can make predictions by users' rating history. The rating of user ```u``` to item ```j``` is calculated as below
+After acquiring the similarities between each pair of movies, we can make predictions by users' rating history. The rating of user ```u``` to item ```j``` is calculated as below.
 
 <center><img src="http://latex.codecogs.com/gif.latex?P_{uj}=\frac{\sum_{i%20\in N(u)}w_{ji}%20r_{ui}}{\sum_{i\in N(u)}w_{ji}}" /></center>
 
 in which <img src="http://latex.codecogs.com/gif.latex?|N(u)|" /> is the set of items rated by user ```u```. <img src="http://latex.codecogs.com/gif.latex?W_{ji}" />  is the similarity between item ```i``` and ```j```, <img src="http://latex.codecogs.com/gif.latex?r_{ui}" />  is the previous rating of item ```i``` from user ```u```
 
 This Recommender System was finally evaluated on test dataset by the Root Mean Square Error
-<center> <img src="http://latex.codecogs.com/gif.latex?RMSE=\sqrt{\frac{1}{n}\sum_{uj}(P_{uj} - R_{uj})^2}" /></center>
+<center><img src="http://latex.codecogs.com/gif.latex?RMSE=\sqrt{\frac{1}{n}\sum_{uj}(P_{uj} - R_{uj})^2}" /></center>
 
 in which, <img src="http://latex.codecogs.com/gif.latex?|R_{uj}|" /> is the ground truth rating of user ```u``` to movie ```j```, <img src="http://latex.codecogs.com/gif.latex?|P_{uj}|" /> is the prediction made by recommender sytem, ```n``` is the total number of test dataset, ```n``` is the total number of test dataset.
 
