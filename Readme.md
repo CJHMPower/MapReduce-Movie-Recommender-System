@@ -1,8 +1,6 @@
 
 # MapReduce Moive Recommender System
 
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-
 ## Overview
 
 This is a movie Recommender System project based on [Item Collaborative Filtering](https://en.wikipedia.org/wiki/Item-item_collaborative_filtering). It is run on Hadoop MapReduce Cluster environment. This project is still in progress. More experiments and results will be released in this resporitory further.
@@ -19,6 +17,8 @@ The dataset used for this movie Recommender System comes from the [Netflix Prize
 The Item Collaborative Filtering Algorithms can be divided into two main steps
 
 ### 1.Compute the similarity between items
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 
 The most commonly used metric for items is Cosine Similarity
 
