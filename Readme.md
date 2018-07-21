@@ -28,7 +28,7 @@ in which <img src="http://latex.codecogs.com/gif.latex?|N(i)|" /> is the number 
 
 After acquiring the similarities between each pair of movies, we can make predictions by users' rating history. The rating of user ```u``` to item ```j``` is calculated as below.
 
-![](http://latex.codecogs.com/gif.latex?P_{uj}=\frac{\sum_{i\in N(u)}w_{ji}r_{ui}}{\sum_{i\in N(u)}w_{ji}})
+![](http://latex.codecogs.com/gif.latex?P_{uj}=\frac{\sum_{i%20\\in%20N(u)}w_{ji}%20r_{ui}}{\sum_{i\in%20N(u)}w_{ji}})
 
 in which <img src="http://latex.codecogs.com/gif.latex?|N(u)|" /> is the set of items rated by user ```u```. <img src="http://latex.codecogs.com/gif.latex?W_{ji}" />  is the similarity between item ```i``` and ```j```, <img src="http://latex.codecogs.com/gif.latex?r_{ui}" />  is the previous rating of item ```i``` from user ```u```
 
