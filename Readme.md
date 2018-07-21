@@ -38,7 +38,7 @@ This Recommender System was finally evaluated on test dataset by the Root Mean S
 
 <div align=center>
 ![](http://latex.codecogs.com/gif.latex?RMSE=\sqrt{\frac{1}{n}\sum_{uj}(P_{uj}-R_{uj})^2})
- </div>
+</div>
 
 in which, <img src="http://latex.codecogs.com/gif.latex?|R_{uj}|" /> is the ground truth rating of user ```u``` to movie ```j```, <img src="http://latex.codecogs.com/gif.latex?|P_{uj}|" /> is the prediction made by recommender sytem, ```n``` is the total number of test dataset, ```n``` is the total number of test dataset.
 
