@@ -22,7 +22,7 @@ The most commonly used metric for items is Cosine Similarity
 
 <center><img src="http://latex.codecogs.com/gif.latex?W_{ij}=\frac{|N(i)|%20\bigcap%20|N(j)|}{\sqrt{|N(i)||N(j)|}}" /></center>
 
-in which <img src=""http://latex.codecogs.com/gif.latex?|N(i)|" /> is the number of users interested in item ```i```, <img src=""http://latex.codecogs.com/gif.latex?|N(j)|" /> is the number of sers interested in item ```j```. <img src=""http://latex.codecogs.com/gif.latex?|N(i)|\bigcap|N(j)|" /> is the number of user interested in both item ```i``` and ```j```
+in which <img src="http://latex.codecogs.com/gif.latex?|N(i)|" /> is the number of users interested in item ```i```, <img src="http://latex.codecogs.com/gif.latex?|N(j)|" /> is the number of sers interested in item ```j```. <img src="http://latex.codecogs.com/gif.latex?|N(i)|\bigcap|N(j)|" /> is the number of user interested in both item ```i``` and ```j```
 
 ### 2. Compute prediction ratings for users' rating history
 
