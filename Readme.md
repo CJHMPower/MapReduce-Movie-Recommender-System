@@ -18,11 +18,9 @@ The Item Collaborative Filtering Algorithms can be divided into two main steps
 
 ### 1.Compute the similarity between items
 
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-
 The most commonly used metric for items is Cosine Similarity
 
-<center> $$ W_{ij} = \frac{|N(i)| \bigcap |N(j)|}{\sqrt{|N(i)||N(j)|}} $$ </center>
+<img src="http://latex.codecogs.com/gif.latex?W_{ij} = \frac{|N(i)| \bigcap |N(j)|}{\sqrt{|N(i)||N(j)|}}" />
 
 in which $ |N(i)| $ is the number of users interested in item ```i```, $ |N(j)| $ is the number of users interested in item ```j```. $|N(i)| \bigcap |N(j)|$ is the number of user interested in both item ```i``` and ```j```
 
