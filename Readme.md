@@ -20,20 +20,20 @@ The Item Collaborative Filtering Algorithms can be divided into two main steps
 
 The most commonly used metric for items is Cosine Similarity
 
-<img src="http://latex.codecogs.com/gif.latex?W_{ij}=\frac{|N(i)|%20\bigcap%20|N(j)|}{\sqrt{|N(i)||N(j)|}}" />
+<center><img src="http://latex.codecogs.com/gif.latex?W_{ij}=\frac{|N(i)|%20\bigcap%20|N(j)|}{\sqrt{|N(i)||N(j)|}}" /></center>
 
-in which $ |N(i)| $ is the number of users interested in item ```i```, $ |N(j)| $ is the number of sers interested in item ```j```. $|N(i)| \bigcap |N(j)|$ is the number of user interested in both item ```i``` and ```j```
+in which <img src=""http://latex.codecogs.com/gif.latex?|N(i)|" /> is the number of users interested in item ```i```, <img src=""http://latex.codecogs.com/gif.latex?|N(j)|" /> is the number of sers interested in item ```j```. <img src=""http://latex.codecogs.com/gif.latex?|N(i)|\bigcap|N(j)|" /> is the number of user interested in both item ```i``` and ```j```
 
 ### 2. Compute prediction ratings for users' rating history
 
 After acquiring the similarities between each pair of movies, we can make predictions by users' rating history. The rating of user ```u``` to item ```j``` is calculated as below
 
-<center> $$ P_{uj} = \frac{\sum_{i \in N(u)} w_{ji}r_{ui}}{\sum_{i\in N(u)}w_{ji}}  $$
+<center><img src="http://latex.codecogs.com/gif.latex?P_{uj}=\frac{\sum_{i\in N(u)}w_{ji}r_{ui}}{\sum_{i\in N(u)}w_{ji}}" /></center>
 
 in which $ N(u)$ is the set of items rated by user ```u```. $w_{ji}$  is the similarity between item ```i``` and ```j```, $r_{ui}$  is the previous rating of item ```i``` from user ```u```
 
 This Recommender System was finally evaluated on test dataset by the Root Mean Square Error
-<center> $$ RMSE = \sqrt{ \frac{1}{n} \sum_{uj} (P_{uj} - R_{uj})^2} $$
+<center> <img src="http://latex.codecogs.com/gif.latex?RMSE=\sqrt{\frac{1}{n}\sum_{uj}(P_{uj} - R_{uj})^2}" /></center>
 
 in which, $ R_{uj}$ is the ground truth rating of user ```u``` to movie ```j```, $ P_{uj}$ is the prediction made by recommender sytem, ```n``` is the total number of test dataset.
 
