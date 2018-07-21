@@ -7,7 +7,7 @@ This is a movie Recommender System project based on [Item Collaborative Filterin
 
 ## Dataset and Preprocess
 
-The dataset used for this movie Recommender System comes from the [Netflix Prize](https://www.netflixprize.com/). The original Netflix dataset consists of movie ratings from 480189 users and 17770 movies, which is too large to run on Pseudo-Distrubuted Mode. As a result, a parameter ** n ** can be specfied to select the first **n** movies from the original training set. 20% of the training data will be split for testing set (See the ```data_preprocess.py``` file for more details). All the selected data will be written into a single txt file as the raw input data for MapReduce job. The input format for both train and test data is:
+The dataset used for this movie Recommender System comes from the [Netflix Prize](https://www.netflixprize.com/). The original Netflix dataset consists of movie ratings from 480189 users and 17770 movies, which is too large to run on Pseudo-Distrubuted Mode. As a result, a parameter **n** can be specfied to select the first **n** movies from the original training set. 20% of the training data will be split for testing set (See the ```data_preprocess.py``` file for more details). All the selected data will be written into a single txt file as the raw input data for MapReduce job. The input format for both train and test data is:
 
 <code>   ** userID,movieId,rating **
 </code>
@@ -20,7 +20,7 @@ The Item Collaborative Filtering Algorithms can be divided into two main steps
 
 The most commonly used metric for items is Cosine Similarity
 
-<center> $$ W_{ij} = \frac{|N(i)| \bigcap |N(j)|}{\sqrt{|N(i)||N(j)|}} $$ </center>
+<center> W_{ij} = \frac{|N(i)| \bigcap |N(j)|}{\sqrt{|N(i)||N(j)|}} </center>
 
 in which $ |N(i)| $ is the number of users interested in item ```i```, $ |N(j)| $ is the number of users interested in item ```j```. $|N(i)| \bigcap |N(j)|$ is the number of user interested in both item ```i``` and ```j```
 
