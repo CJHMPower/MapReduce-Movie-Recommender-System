@@ -1,5 +1,6 @@
 
 # MapReduce Moive Recommender System
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 
 ## Overview
 
@@ -20,7 +21,7 @@ The Item Collaborative Filtering Algorithms can be divided into two main steps
 
 The most commonly used metric for items is Cosine Similarity
 
-<center> W_{ij} = \frac{|N(i)| \bigcap |N(j)|}{\sqrt{|N(i)||N(j)|}} </center>
+<center> $$ W_{ij} = \frac{|N(i)| \bigcap |N(j)|}{\sqrt{|N(i)||N(j)|}} $$ </center>
 
 in which $ |N(i)| $ is the number of users interested in item ```i```, $ |N(j)| $ is the number of users interested in item ```j```. $|N(i)| \bigcap |N(j)|$ is the number of user interested in both item ```i``` and ```j```
 
